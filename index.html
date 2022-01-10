@@ -92,5 +92,30 @@ width:325px; height:20px">Sheet: Penyelaras Komuniti</a><br><br>
   </tr>
     </table>
   </div>
+                <script>
+      document.oncontextmenu = () => {
+          alert("Tidak dibenarkan")
+          return false
+      }
+      
+      document.onkeydown = e => {
+        if(e.key == "F12") {
+          alert("Tidak dibenarkan")
+          return false          
+        }
+        if(e.ctrlKey && e.key == "u") {
+          alert("Tidak dibenarkan")
+          return false          
+        }
+        if(e.ctrlKey && e.key == "c") {
+          alert("Tidak dibenarkan")
+          return false          
+        }
+        if(e.ctrlKey && e.key == "v") {
+          alert("Tidak dibenarkan")
+          return false          
+        }
+      }        
+    </script>
   </body>
 </html>
