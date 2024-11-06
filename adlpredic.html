@@ -4,37 +4,11 @@
   <meta charset="utf-8">
   <title>Activity Of Daily Living (ADL) Prediction Form</title>
   <link rel="icon" type="image/x-icon" href="icon.png"/>
-  <style>
-    /* Ensure the iframe fills the entire viewport without scrollbars */
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      height: 100%;
-    }
-  </style>
 </head>
 <body>
-  <!-- Embeds the Google Apps Script form with sandbox settings for form submission -->
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbwrCBLy6LiOizQ__6qVOdi2Co8AIf4o2I1qOoK4twRFIeghz0iLr2tXF9uKOg1_mQDXGA/exec" 
-    sandbox="allow-forms allow-same-origin"
-    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 999999;">
-  </iframe>
-
-  <!-- Script to prevent specific key combinations and right-click -->
   <script>
-    document.oncontextmenu = () => {
-      alert("Tidak dibenarkan");
-      return false;
-    };
-    
-    document.onkeydown = e => {
-      if (e.key === "F12" || (e.ctrlKey && ["u", "c", "v"].includes(e.key))) {
-        alert("Tidak dibenarkan");
-        return false;
-      }
-    };
+    // Redirects directly to the Google Apps Script form
+    window.location.href = "https://script.google.com/macros/s/AKfycbwrCBLy6LiOizQ__6qVOdi2Co8AIf4o2I1qOoK4twRFIeghz0iLr2tXF9uKOg1_mQDXGA/exec";
   </script>
 </body>
 </html>
